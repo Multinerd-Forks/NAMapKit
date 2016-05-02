@@ -32,7 +32,7 @@
 - (void)createImageView
 {
     if (self.dataSource) {
-        _imageView = [[ARTiledImageView alloc] initWithDataSource:self.dataSource];
+        self.imageView = [[ARTiledImageView alloc] initWithDataSource:self.dataSource];
         self.imageView.displayTileBorders = self.displayTileBorders;
         [self addSubview:self.imageView];
     }
