@@ -1,4 +1,9 @@
 
+#### [3.2.2](https://github.com/neilang/NAMapKit/tree/v3.2.2) (4/7/2016)
+
+* [#45](https://github.com/neiland/NAMapKit/pull/45) - Exposed: `ImageView` to assist with getting accurate CGPoints when `NAMapKit` scrollview scale != 1.0f (ex; CGPoint p = [gesture locationInView:mapView.imageView];) - [@multinerd](https://github.com/multinerd).
+* [#45](https://github.com/neiland/NAMapKit/issues/45) - Added: ability to remove all annotations from the map - [@multinerd](https://github.com/multinerd).
+
 #### [3.2.1](https://github.com/neilang/NAMapKit/tree/v3.2.1) (4/7/2016)
 
 * [#59](https://github.com/neiland/NAMapKit/issues/59), [#52](https://github.com/neiland/NAMapKit/issues/52) - Fix: `NAPinAnnotationView` pin images fail to load - [@joeshi](https://github.com/joeshi).

@@ -16,6 +16,7 @@ const CGFloat NAMapViewPinAnimationDuration = 0.5f;
 @end
 
 @implementation NAPinAnnotation
+@dynamic view;
 
 - (id)initWithPoint:(CGPoint)point
 {

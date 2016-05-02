@@ -12,7 +12,6 @@ const CGFloat NAMapViewDefaultZoomStep = 1.5f;
 
 @interface NAMapView()
 
-@property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, readonly) NSMutableArray *annotations;
 @property (nonatomic, assign) BOOL contentSizeObserving;
 
@@ -109,6 +108,13 @@ const CGFloat NAMapViewDefaultZoomStep = 1.5f;
 {
     [annotation removeFromMapView];
     [self.annotations removeObject:annotation];
+}
+
+- (void)removeAllAnnotations
+{
+    for (NAAnnotation *annotation in [self.annotations reverseObjectEnumerator]) {
+        [self removeAnnotation:annotation];
+    }
 }
 
 - (void)centerOnPoint:(CGPoint)point animated:(BOOL)animate

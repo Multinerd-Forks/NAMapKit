@@ -19,6 +19,8 @@
 - (void)addAnnotation:(NAAnnotation *)annotation animated:(BOOL)animate;
 // Add an array of annotations.
 - (void)addAnnotations:(NSArray *)annotations animated:(BOOL)animate;
+/// Remove all annotation.
+- (void)removeAllAnnotations;
 /// Remove an annotation.
 - (void)removeAnnotation:(NAAnnotation *)annotation;
 /// Calculate the point on the screen from a point on the original image at the current zoom level.
@@ -48,6 +50,8 @@
 @property (readwrite, nonatomic, strong) UITapGestureRecognizer *doubleTapGesture;
 /// The double tap gesture for zooming out
 @property (readwrite, nonatomic, strong) UITapGestureRecognizer *twoFingerTapGesture;
+
+@property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
