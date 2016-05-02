@@ -1,7 +1,7 @@
 
 #### [3.2.2](https://github.com/neilang/NAMapKit/tree/v3.2.2) (5/2/2016)
 
-* [#65](https://github.com/neiland/NAMapKit/pull/65) - Exposed: `ImageView` to assist with getting accurate CGPoints when `NAMapKit` scrollview scale != 1.0f (ex; CGPoint p = [gesture locationInView:mapView.imageView];) - [@multinerd](https://github.com/multinerd).
+* [#65](https://github.com/neiland/NAMapKit/pull/65) - Exposed: `ImageView` to assist with getting accurate CGPoints (see ReadMe about Gestures) - [@multinerd](https://github.com/multinerd).
 * [#45](https://github.com/neiland/NAMapKit/issues/45) - Added: `NAMapView#removeAllAnnotations` - [@multinerd](https://github.com/multinerd).
 
 #### [3.2.1](https://github.com/neilang/NAMapKit/tree/v3.2.1) (4/7/2016)

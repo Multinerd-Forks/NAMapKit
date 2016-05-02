@@ -55,6 +55,7 @@ You can find a complete custom annotation example of multi-colored pins in [NAPi
     annotation.subTitle = @"Subtitle";
   
     [mapView addAnnotation:annotation animated:YES];
+}
 ```
 
 #### Delegates
