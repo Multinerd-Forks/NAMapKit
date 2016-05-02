@@ -43,6 +43,20 @@ The implementation of `NADotAnnotation` places a red semi-transparent dot on the
 
 You can find a complete custom annotation example of multi-colored pins in [NAPinAnnotation.h](NAMapKit/NAPinAnnotation.h)/[.m](NAMapKit/NAPinAnnotation.m).
 
+#### Adding Annotations via gestures
+
+```objc
+- (void)longPress:(UITapGestureRecognizer *)gesture {
+    //get CGPoint
+    CGPoint p = [gesture locationInView:mapview.imageView];
+
+    NAPinAnnotation *annotation = [[NAPinAnnotation alloc] initWithPoint:p];
+    annotation.title = @"Title";
+    annotation.subTitle = @"Subtitle";
+  
+    [mapView addAnnotation:annotation animated:YES];
+```
+
 #### Delegates
 
 You can capture finger taps and zoom changes by registering a `mapViewDelegate` with the map. The delegate must implement the [NAMapViewDelegate](NAMapKit/NAMapViewDelegate.h) protocol.
